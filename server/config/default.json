@@ -2,5 +2,7 @@
   "serverPort" : 5000,
   "dbUrl" : "mongodb+srv://pefimchshiks:qwerty1234@cloud.aaztdiq.mongodb.net/cloud?retryWrites=true&w=majority",
   "secretKey": "cloud-secret-key",
-  "filePath": "/home/pavel/Документы/LABS/8_sem/graduate_work/cloud_storage_app/server/files"
+  "filePath": "/home/pavel/Документы/LABS/8_sem/graduate_work/cloud_storage_app/server/files",
+  "staticPath": "/home/pavel/Документы/LABS/8_sem/graduate_work/cloud_storage_app/server/static"
+
 }
