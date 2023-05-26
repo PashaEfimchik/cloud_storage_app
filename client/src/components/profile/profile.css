@@ -1,0 +1,56 @@
+.profile__container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 30%;
+    margin-top: 5%;
+    background-color: #E8E6E1;
+    border-radius: 20px;
+}
+
+.profile__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 12%;
+}
+
+#contained-button-file-profile {
+    display: none;
+}
+
+.profile__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.profile__content-avatar-add span .css-i4bv87-MuiSvgIcon-root{
+    color: #188800;
+    font-size: 40px !important;
+    transition: transform 0.3s;
+}
+
+.profile__content-avatar-add span .css-i4bv87-MuiSvgIcon-root:hover {
+    color: #146900;
+    transform: scale(1.4);
+}
+
+.profile__btn-deleteIcon {
+    color: #b20303;
+    font-size: 40px !important;
+    transition: transform 0.3s;
+}
+
+.profile__content-avatar-delete .MuiButtonBase-root {
+    transition: transform 0.3s;
+}
+
+.profile__content-avatar-delete .MuiButtonBase-root:hover {
+    transition: transform 0.3s;
+    color: #910000;
+    transform: scale(1.4);
+}

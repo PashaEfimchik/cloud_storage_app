@@ -1,28 +1,57 @@
 .authorization {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 600px;
   align-items: center;
-  background-color: white;
+  background-color: #E8E6E1;
   border-radius: 20px;
-  padding: 30px;
+  padding: 50px;
   align-self: center;
   margin-top: 100px;
 }
 .authorization__header {
   font-size: 30px;
   font-weight: 700;
+  padding-bottom: 30px;
+  color: #27241D;
+  font-family: Roboto, sans-serif;
 }
 .authorization input {
-  margin: 10px 20px;
+  /*margin: 10px 20px;*/
+  /*margin: -5px 60px;*/
+  /*padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 30px;*/
+}
+.authorization__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  justify-content: space-between;
+  width: 300px;
 }
 .authorization__btn {
   border: none;
-  background-color: #566885;
-  border-radius: 8px;
+  background-color: #867F72;
+  border-radius: 5px;
   color: white;
   font-weight: 700;
-  padding: 5px 10px;
-  align-self: flex-end;
-  margin-top: 10px;
+  padding: 12px 30px;
+  align-self: center;
+  margin-top: 30px;
+}
+.authorization__input-wrapper label.Mui-focused {
+  color: #27241D;
+}
+
+.authorization__input-wrapper .MuiInputBase-root:after {
+  border-bottom-color: #27241D;
+}
+
+.authorization__btn:hover {
+  background-color: #504A40;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  cursor: pointer;
 }

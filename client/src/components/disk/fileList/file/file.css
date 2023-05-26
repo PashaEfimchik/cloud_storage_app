@@ -1,13 +1,22 @@
 .file {
-    margin: 10px 0;
-    border-bottom: solid 2px #566885;
+    background-color: #E8E6E1;
+    margin: 20px 0;
+    height: 80px;
+    border-bottom: solid 2px #27241D;
     display: grid;
-    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    grid-template-columns: 1fr 5fr .5fr .5fr repeat(2, 1fr);
     align-items: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 100000;
 }
 .file:hover {
+    transition: ease-in-out 0.3s;
     transform: scale(1.02);
+    box-shadow: 0px 0px 16px 0px rgba(39, 36, 29, 0.5);
 }
+
 .file__img {
     justify-self: center;
 }
@@ -18,4 +27,63 @@
 .file__size {
     grid-column-start: 6;
     justify-self: center;
+}
+.file__btn {
+    display: none;
+}
+.file:hover .file__date {
+    grid-column-start: 5;
+}
+.file:hover .file__size {
+    grid-column-start: 6;
+}
+.file__btn-downloadIcon {
+    color: #3e68d1;
+}
+
+.file__btn-deleteIcon{
+    color: #b20303;
+}
+.file:hover .file__download {
+    grid-column-start: 3;
+    display: block;
+}
+.file:hover .file__delete {
+    grid-column-start: 4;
+    display: block;
+}
+.file-plate {
+    background-color: #E8E6E1;
+    margin: 11px;
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: solid 2px #27241D;
+    justify-content: space-evenly;
+    transition: transform 0.3s;
+}
+
+.file-plate__name {
+    font-size: 13px;
+}
+
+.file-plate.hovered {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 16px 0px rgba(39, 36, 29, 0.5);
+}
+
+.file-plate__img {
+    height: 70px;
+    width: 70px;
+}
+.file-plate__btns {
+    display: none;
+}
+.file-plate:hover .file-plate__btns {
+    display: flex;
+    transition: ease-in-out 0.3s;
 }

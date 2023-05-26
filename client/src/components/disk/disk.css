@@ -4,10 +4,76 @@
 .disk__btns {
     display: flex;
 }
-.disk__create {
+#disk__back {
+    background-color: #625D52;
+}
+#disk__back:hover {
+    transition: background-color 300ms ease-in-out;
+    background-color: #423D33;
+}
+#disk__create {
+    margin-left: 15px;
+    background-color: #857F72;
+}
+#disk__create:hover {
+    transition: background-color 300ms ease-in-out;
+    background-color: #757167;
+}
+#disk__upload-btn {
+    margin-left: 15px;
+    background-color: #857F72;
+}
+#disk__upload-btn:hover {
+    transition: background-color 300ms ease-in-out;
+    background-color: #757167;
+}
+.disk__search-input {
+    width: 200px;
+    margin-left: 30px;
+}
+.disk__upload-input {
+    display: none;
+}
+.disk__upload-label {
+    border: 2px dashed #423D33;
+    padding: 5px 10px;
+    cursor: pointer;
     margin-left: 10px;
 }
+.disk__sort-select {
+    margin-left: auto;
+}
 
+.disk__sort-select label.Mui-focused {
+    color: #27241D;
+}
+
+.disk__sort-select .MuiInput-underline:after {
+    border-bottom-color: #27241D;
+}
+
+.disk__list,
+.disk__plate {
+    font-size: large;
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: no-repeat center center;
+    background-size: contain;
+    margin: 0 10px;
+}
+.drop-area {
+    width: 100%;
+    height: 85vh;
+    margin: 20px;
+    border: dashed #27241D 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
 .popup {
     width: 100%;
     height: 100vh;
@@ -24,8 +90,8 @@
 .popup__content {
     width: 400px;
     background: white;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 30px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -37,5 +103,46 @@
     justify-content: space-between;
 }
 .popup input {
-    margin: 20px 0px;
+    margin: 10px 10px;
+    padding: 0;
+    width: 270px;
+}
+.popup__input-create {
+    padding: 20px;
+}
+.popup__input-create label.Mui-focused {
+    color: #27241D;
+}
+.popup__input-create .MuiInputBase-root:after {
+    border-bottom-color: #27241D;
+}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #423D33;
+    border-color: #423D33 transparent #423D33 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
